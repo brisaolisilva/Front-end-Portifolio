@@ -2,7 +2,7 @@ body {
   margin-bottom: 90px;
 }
 :root {
-  --primary-color: #ec3369;
+  --primary-color: #986B3F;
   --secondary-color: #ec336914;
   --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
   --primary-font: "Bellefair", serif;
@@ -26,7 +26,7 @@ h2 a {
   color: black;
 }
 h2 a:hover {
-  color: #ec3369;
+  color: #986B3F;
 }
 h3 {
   font-family: var(--third-font);
