@@ -69,16 +69,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // ── ACTIVE NAV on scroll ──
   const sections = document.querySelectorAll('section[id]');
   const navAnchors = document.querySelectorAll('.nav-links a');
-  new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        const id = entry.target.getAttribute('id');
-        navAnchors.forEach(a => {
-          a.style.color = a.getAttribute('href') === `#${id}` ? 'var(--terracotta)' : '';
-        });
-      }
-    });
-  }, { threshold: 0.4 }).observe && sections.forEach(s => {
+  sections.forEach(s => {
     new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
@@ -89,68 +80,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }
       });
     }, { threshold: 0.35 }).observe(s);
-  });
-
-  // ─────────────────────────────────────────
-  // SHAPEDIVER MODAL
-  // ─────────────────────────────────────────
-  const modal      = document.getElementById('sd-modal');
-  const iframe     = document.getElementById('sd-iframe');
-  const loading    = document.getElementById('sd-loading');
-  const modalName  = document.getElementById('sd-modal-name');
-  const openLink   = document.getElementById('sd-open-link');
-  const closeBtn   = document.getElementById('sd-close');
-  const backdrop   = modal?.querySelector('.sd-modal-backdrop');
-
-  function openModal(title, url) {
-    // Set header info
-    modalName.textContent = title;
-    openLink.href = url;
-
-    // Show loading, clear previous iframe src
-    loading.classList.remove('hidden');
-    iframe.src = '';
-
-    // Show modal
-    modal.hidden = false;
-    document.body.style.overflow = 'hidden';
-
-    // Small delay so modal animation plays before heavy iframe load
-    requestAnimationFrame(() => {
-      requestAnimationFrame(() => {
-        iframe.src = url;
-      });
-    });
-
-    // Hide loading spinner once iframe has loaded
-    iframe.onload = () => {
-      // Give the 3D scene a moment to initialise before hiding spinner
-      setTimeout(() => loading.classList.add('hidden'), 800);
-    };
-  }
-
-  function closeModal() {
-    modal.hidden = true;
-    document.body.style.overflow = '';
-    // Clear iframe to stop WebGL context running in background
-    iframe.src = '';
-    loading.classList.remove('hidden');
-  }
-
-  // Attach click to every prototype card
-  document.querySelectorAll('.prototype-card[data-url]').forEach(card => {
-    card.addEventListener('click', () => {
-      openModal(card.dataset.title, card.dataset.url);
-    });
-  });
-
-  // Close via button or backdrop click
-  closeBtn?.addEventListener('click', closeModal);
-  backdrop?.addEventListener('click', closeModal);
-
-  // Close on Escape
-  document.addEventListener('keydown', e => {
-    if (e.key === 'Escape' && !modal.hidden) closeModal();
   });
 
 });

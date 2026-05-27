@@ -303,104 +303,63 @@
   <!-- PROTOTYPES -->
   <section id="prototypes">
     <div class="section-label">03 — Interactive Prototypes</div>
-    <p class="prototypes-intro">Parametric configurator prototypes built with Grasshopper, Rhino.Inside, and ShapeDiver — running live in the browser. Click any card to explore the interactive 3D model.</p>
+    <p class="prototypes-intro">Parametric configurator prototypes built with Grasshopper, Rhino.Inside, and ShapeDiver — running live in the browser. Click any card to open the model on ShapeDiver.</p>
     <div class="prototypes-grid">
 
-      <button class="prototype-card"
-              data-slug="shapediver-test-68"
-              data-title="House Configurator Test"
-              data-url="https://www.shapediver.com/app/m/shapediver-test-68">
+      <a class="prototype-card"
+         href="https://www.shapediver.com/app/builder/v1/main/latest/?slug=shapediver-test-68&redirect=0"
+         target="_blank" rel="noopener">
         <div class="proto-thumb-wrap">
           <img src="images/prototypes/proto-01-house.svg" alt="House Configurator preview" class="proto-thumb" loading="lazy" />
-          <div class="proto-play">▶</div>
+          <div class="proto-play"></div>
         </div>
         <div class="proto-info">
           <div class="proto-number-sm">01</div>
           <h3>House Configurator Test</h3>
           <p>Early prototype exploring real-time parametric house configuration in the browser via ShapeDiver and Grasshopper. Tests user interaction, parameter sliders, and geometry update speed.</p>
           <div class="proto-tags"><span>ShapeDiver</span><span>Grasshopper</span><span>Configurator</span></div>
-          <span class="proto-launch">Launch interactive model ↗</span>
+          <span class="proto-launch">Open in ShapeDiver ↗</span>
         </div>
-      </button>
+      </a>
 
-      <button class="prototype-card"
-              data-slug="nordnes-saltak-a-b-c"
-              data-title="Nordnes Saltak — Roof Variants A/B/C"
-              data-url="https://www.shapediver.com/app/m/nordnes-saltak-a-b-c">
+      <a class="prototype-card"
+         href="https://www.shapediver.com/app/m/nordnes-saltak-a-b-c"
+         target="_blank" rel="noopener">
         <div class="proto-thumb-wrap">
           <img src="images/prototypes/proto-02-nordnes.svg" alt="Nordnes Saltak preview" class="proto-thumb" loading="lazy" />
-          <div class="proto-play">▶</div>
+          <div class="proto-play"></div>
         </div>
         <div class="proto-info">
           <div class="proto-number-sm">02</div>
           <h3>Nordnes Saltak — Roof Variants A/B/C</h3>
           <p>Parametric cabin roof study with multiple configurable variants. Explores how structural grid decisions and roof typology affect spatial layout and regulatory compliance in prefab cabin typologies.</p>
           <div class="proto-tags"><span>ShapeDiver</span><span>Cabin Design</span><span>Prefab</span><span>Grasshopper</span></div>
-          <span class="proto-launch">Launch interactive model ↗</span>
+          <span class="proto-launch">Open in ShapeDiver ↗</span>
         </div>
-      </button>
+      </a>
 
-      <button class="prototype-card"
-              data-slug="110-solheim"
-              data-title="Solheim 110 — Unit Configurator"
-              data-url="https://www.shapediver.com/app/m/110-solheim">
+      <a class="prototype-card"
+         href="https://www.shapediver.com/app/m/110-solheim"
+         target="_blank" rel="noopener">
         <div class="proto-thumb-wrap">
           <img src="images/prototypes/proto-03-solheim.svg" alt="Solheim 110 preview" class="proto-thumb" loading="lazy" />
-          <div class="proto-play">▶</div>
+          <div class="proto-play"></div>
         </div>
         <div class="proto-info">
           <div class="proto-number-sm">03</div>
           <h3>Solheim 110 — Unit Configurator</h3>
           <p>Web-based configurator for the Solheim cabin series (110m²). Allows interactive exploration of layout options — part of the research into AI-based image comparison for design variation across a product family.</p>
           <div class="proto-tags"><span>ShapeDiver</span><span>Cabin</span><span>Saltdalshytta</span><span>Layout</span></div>
-          <span class="proto-launch">Launch interactive model ↗</span>
+          <span class="proto-launch">Open in ShapeDiver ↗</span>
         </div>
-      </button>
+      </a>
 
     </div>
     <div class="prototypes-note">
       <span>↳</span>
-      <span>Live ShapeDiver models built as part of R&amp;D at Mestergruppen / Pilarr. Requires a modern browser with WebGL. If embedding is restricted, the model opens in ShapeDiver directly.</span>
+      <span>Live ShapeDiver models built as part of R&amp;D at Mestergruppen / Pilarr. Opens in a new tab — requires a modern browser with WebGL.</span>
     </div>
   </section>
-
-  <!-- SHAPEDIVER VIEWER MODAL -->
-  <div id="sd-modal" class="sd-modal" role="dialog" aria-modal="true" aria-label="ShapeDiver viewer" hidden>
-    <div class="sd-modal-backdrop"></div>
-    <div class="sd-modal-panel">
-      <div class="sd-modal-header">
-        <div class="sd-modal-title">
-          <span class="sd-modal-label">Interactive Prototype</span>
-          <span id="sd-modal-name"></span>
-        </div>
-        <div class="sd-modal-actions">
-          <a id="sd-open-link" href="#" target="_blank" rel="noopener" class="sd-btn-external" title="Open in ShapeDiver">
-            Open in ShapeDiver ↗
-          </a>
-          <button id="sd-close" class="sd-btn-close" aria-label="Close viewer">
-            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <line x1="2" y1="2" x2="16" y2="16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-              <line x1="16" y1="2" x2="2" y2="16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-            </svg>
-          </button>
-        </div>
-      </div>
-      <div class="sd-modal-body">
-        <div id="sd-loading" class="sd-loading">
-          <div class="sd-spinner"></div>
-          <span>Loading model…</span>
-        </div>
-        <iframe
-          id="sd-iframe"
-          class="sd-iframe"
-          src=""
-          allow="fullscreen"
-          allowfullscreen
-          title="ShapeDiver 3D Viewer"
-        ></iframe>
-      </div>
-    </div>
-  </div>
 
   <!-- SKILLS -->
   <section id="skills">
