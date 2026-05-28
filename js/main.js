@@ -83,3 +83,11 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
 });
+
+  // ── BACK TO TOP ──
+  const btt = document.getElementById('btt');
+  if (btt) {
+    window.addEventListener('scroll', () => {
+      btt.classList.toggle('visible', window.scrollY > 400);
+    }, { passive: true });
+  }

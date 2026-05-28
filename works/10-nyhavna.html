@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Øvre Nyhavna — Brisa Oliveira e Silva</title>
+  <link rel="stylesheet" href="work.css"/>
+</head>
+<body>
+
+  <nav class="work-nav">
+    <a href="../index.html#works" class="work-nav-back">Selected Works</a>
+    <span class="work-nav-logo">B.O.S.</span>
+    <span class="work-nav-cat">Architecture</span>
+  </nav>
+
+  <section class="work-hero">
+    <div class="work-hero-img">
+      <img src="../images/works/10_nyhavna.svg" alt="Øvre Nyhavna" onerror="this.parentElement.classList.add('placeholder'); this.style.display='none'; this.parentElement.innerHTML+='<span>Add your image here</span>'"/>
+    </div>
+    <div class="work-hero-text">
+      <div class="work-hero-num">10</div>
+      <div class="work-hero-label">Architecture · 2019–2020</div>
+      <h1 class="work-hero-title">Øvre Nyhavna</h1>
+      <div class="work-hero-sub">Pre-Project Development — Trondheim, Norway</div>
+      <div class="work-tags"><span>Archicad</span><span>Urban Design</span><span>BIM</span><span>Pre-project</span><span>BTA/BYA</span><span>Trondheim</span></div>
+    </div>
+  </section>
+
+  <div class="work-divider"></div>
+
+  <div class="work-content">
+    <div class="work-text">
+      <div class='work-section-label'>Overview</div>
+      <h2>Transforming Trondheim's Historic Harbour</h2>
+      <p>The Nyhavna Øvre initiative is a key component in transforming Trondheim's historic harbour area into a lively and sustainable urban neighbourhood.</p>
+      <div class='work-section-label' style='margin-top:2rem'>Collaboration with a Visionary Architect</div>
+      <p>During the pre-project phase, I had the honour of collaborating closely with Per Knudsen, one of Trondheim's most esteemed architects. Witnessing his creative process — where concepts emerged from quick sketches on whatever paper was available — was truly inspiring, showcasing his architectural intuition and expertise.</p>
+      <div class='work-section-label' style='margin-top:2rem'>My Role</div>
+      <p>My main responsibility was to convert Per Knudsen's conceptual ideas into accurate digital models using ArchiCAD. This involved ensuring that the designs were feasible while maintaining the artistic essence of his vision. I continuously tested design modifications to comply with BTA and BYA regulations, while also coordinating layout variations and façade developments.</p>
+      <div class='work-section-label' style='margin-top:2rem'>The Experience</div>
+      <p>This work demanded meticulous attention to detail, effective collaboration, and a deep understanding of how to harmonise architectural creativity with technical limitations. Although I departed from the company before the project reached its final conception phase, my contributions to the early development of Nyhavna Øvre were both exciting and formative, enhancing my appreciation for conceptual design and teamwork.</p>
+
+    </div>
+    <div class="work-meta">
+      <div class="work-meta-block">
+        <div class="work-meta-label">Period</div>
+        <div class="work-meta-value">May 2019 – April 2020</div>
+      </div>
+      <div class="work-meta-block">
+        <div class="work-meta-label">Employer</div>
+        <div class="work-meta-value"><em>Per Knudsen Arkitektkontor AS</em></div>
+      </div>
+      <div class="work-meta-block">
+        <div class="work-meta-label">Lead Architect</div>
+        <div class="work-meta-value">Per Knudsen</div>
+      </div>
+      <div class="work-meta-block">
+        <div class="work-meta-label">Location</div>
+        <div class="work-meta-value">Trondheim harbour district, Norway</div>
+      </div>
+      <div class="work-meta-block">
+        <div class="work-meta-label">Tools</div>
+        <div class="work-meta-value">ArchiCAD · BTA/BYA regulatory analysis</div>
+      </div>
+
+    </div>
+  </div>
+
+  <footer class="work-footer">
+    <a href="../index.html" class="home">Return to Home</a>
+    <span class="work-footer-copy">© 2026 Brisa Oliveira e Silva</span>
+    <a href="#" class="top" onclick="window.scrollTo({top:0,behavior:'smooth'});return false;">Back to Top</a>
+  </footer>
+
+  <button class="back-to-top" id="btt" aria-label="Back to top" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
+  <script>
+    window.addEventListener('scroll', () => {
+      document.getElementById('btt').classList.toggle('visible', window.scrollY > 300);
+    }, {passive: true});
+  </script>
+</body>
+</html>

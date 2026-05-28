@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>LCA Workflow Development — Brisa Oliveira e Silva</title>
+  <link rel="stylesheet" href="work.css"/>
+</head>
+<body>
+
+  <nav class="work-nav">
+    <a href="../index.html#works" class="work-nav-back">Selected Works</a>
+    <span class="work-nav-logo">B.O.S.</span>
+    <span class="work-nav-cat">Sustainability</span>
+  </nav>
+
+  <section class="work-hero">
+    <div class="work-hero-img">
+      <img src="../images/works/13_lca.svg" alt="LCA Workflow Development" onerror="this.parentElement.classList.add('placeholder'); this.style.display='none'; this.parentElement.innerHTML+='<span>Add your image here</span>'"/>
+    </div>
+    <div class="work-hero-text">
+      <div class="work-hero-num">13</div>
+      <div class="work-hero-label">Sustainability · 2021–2026</div>
+      <h1 class="work-hero-title">LCA Workflow Development</h1>
+      <div class="work-hero-sub">Internal Research — Mestergruppen Arkitekter</div>
+      <div class="work-tags"><span>LCA</span><span>OneClick LCA</span><span>EPD</span><span>Excel</span><span>Carbon</span><span>Revit</span><span>Grasshopper</span></div>
+    </div>
+  </section>
+
+  <div class="work-divider"></div>
+
+  <div class="work-content">
+    <div class="work-text">
+      <div class='work-section-label'>Overview</div>
+      <h2>Creating an Internal Life Cycle Assessment Workflow</h2>
+      <p>This initiative was launched as a partnership between the Sustainability Department and Mestergruppen Arkitekter, aiming to create an internal workflow for generating Life Cycle Assessment (LCA) reports utilising One Click LCA. The objective was to assess the environmental impact of building elements based on Environmental Product Declarations (EPDs) linked to the company's material library.</p>
+      <div class='work-section-label' style='margin-top:2rem'>Testing Data Extraction Methods</div>
+      <p>I started by evaluating various data extraction techniques:</p>
+      <ul><li>Exporting material lists through Excel</li><li>Utilising the Revit plugin</li><li>Using the Grasshopper connector for One Click LCA</li></ul>
+      <p>Through comparative analysis, I determined that the Excel-based workflow provided the highest efficiency and reliability, allowing for improved control over data accuracy and consistency.</p>
+      <div class='work-section-label' style='margin-top:2rem'>Challenges with Revit-Based Calculations</div>
+      <p>Calculations based on Revit presented several challenges: inconsistencies in quantity data (areas and volumes), and the necessity for ongoing manual adjustments. Often, similar materials had identical EPDs but required tailored quantity and unit corrections, which proved challenging to automate.</p>
+      <div class='work-section-label' style='margin-top:2rem'>Development of an Advanced Excel Tool</div>
+      <p>To overcome these obstacles, I created a sophisticated Excel tool featuring an integrated EPD database. This tool allowed for the addition of new materials at any time, and a separate input sheet where users could paste exported material lists from Revit.</p>
+      <p>The tool automatically identified materials with corresponding EPDs, flagged missing entries, and produced a formatted dataset ready for import into One Click LCA — significantly enhancing the efficiency of material–EPD matching and the consistency of early-stage LCA calculations.</p>
+
+    </div>
+    <div class="work-meta">
+      <div class="work-meta-block">
+        <div class="work-meta-label">Period</div>
+        <div class="work-meta-value">2021–2026</div>
+      </div>
+      <div class="work-meta-block">
+        <div class="work-meta-label">Context</div>
+        <div class="work-meta-value">Internal R&amp;D — Mestergruppen / Industriell Verdikjede</div>
+      </div>
+      <div class="work-meta-block">
+        <div class="work-meta-label">Supervisor</div>
+        <div class="work-meta-value">Lars-Fredrik Forberg</div>
+      </div>
+      <div class="work-meta-block">
+        <div class="work-meta-label">Tools</div>
+        <div class="work-meta-value">OneClick LCA · Revit · Excel · Grasshopper · EPD database</div>
+      </div>
+      <div class="work-meta-block">
+        <div class="work-meta-label">Output</div>
+        <div class="work-meta-value">Internal Excel LCA workflow tool</div>
+      </div>
+
+    </div>
+  </div>
+
+  <footer class="work-footer">
+    <a href="../index.html" class="home">Return to Home</a>
+    <span class="work-footer-copy">© 2026 Brisa Oliveira e Silva</span>
+    <a href="#" class="top" onclick="window.scrollTo({top:0,behavior:'smooth'});return false;">Back to Top</a>
+  </footer>
+
+  <button class="back-to-top" id="btt" aria-label="Back to top" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
+  <script>
+    window.addEventListener('scroll', () => {
+      document.getElementById('btt').classList.toggle('visible', window.scrollY > 300);
+    }, {passive: true});
+  </script>
+</body>
+</html>

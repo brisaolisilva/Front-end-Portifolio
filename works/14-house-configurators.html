@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>House &amp; Cabin Configurators — Brisa Oliveira e Silva</title>
+  <link rel="stylesheet" href="work.css"/>
+</head>
+<body>
+
+  <nav class="work-nav">
+    <a href="../index.html#works" class="work-nav-back">Selected Works</a>
+    <span class="work-nav-logo">B.O.S.</span>
+    <span class="work-nav-cat">Research / Configurators</span>
+  </nav>
+
+  <section class="work-hero">
+    <div class="work-hero-img">
+      <img src="../images/works/14_house-configurators.svg" alt="House &amp; Cabin Configurators" onerror="this.parentElement.classList.add('placeholder'); this.style.display='none'; this.parentElement.innerHTML+='<span>Add your image here</span>'"/>
+    </div>
+    <div class="work-hero-text">
+      <div class="work-hero-num">14</div>
+      <div class="work-hero-label">Research / Configurators · 2021–2026</div>
+      <h1 class="work-hero-title">House &amp; Cabin Configurators</h1>
+      <div class="work-hero-sub">Research &amp; Prototyping — Mestergruppen / Pilarr</div>
+      <div class="work-tags"><span>ShapeDiver</span><span>Grasshopper</span><span>Rhino.Inside</span><span>Innobrix</span><span>Web</span><span>Configurator</span></div>
+    </div>
+  </section>
+
+  <div class="work-divider"></div>
+
+  <div class="work-content">
+    <div class="work-text">
+      <div class='work-section-label'>Overview</div>
+      <h2>Exploring Web-Based Configurators for Home Design</h2>
+      <p>This exploratory project examined how web-based configurators can simplify and personalise the home design and ordering process for both entrepreneurs and clients.</p>
+      <div class='work-section-label' style='margin-top:2rem'>Project Ambition</div>
+      <p>The goal was to create a system akin to an IKEA kitchen planner or a Tesla configurator — a tool enabling users to define layouts, finishes, and cost parameters interactively, thereby enhancing both sales and production workflows.</p>
+      <div class='work-section-label' style='margin-top:2rem'>Methodology</div>
+      <p>Throughout the study, I tested ShapeDiver through integrations with Grasshopper and Rhino.Inside.Revit. The focus was on understanding user responsiveness, interface design, and the data transfer process between design models and web interfaces.</p>
+      <p>I evaluated 8+ platforms including ShapeDiver, Rhino.Inside.Revit, Innobrix, Spacio, Paralello, Kitconnect — each assessed for capacity to handle constraints, offer design flexibility, and facilitate user interaction.</p>
+      <div class='work-section-label' style='margin-top:2rem'>Insights Gained</div>
+      <p>These trials provided valuable insights into the existing limitations of digital configurators in architecture, particularly concerning real-time responsiveness, parametric constraints, and the difficulty of translating complex geometries into browser-friendly formats.</p>
+      <div class='work-section-label' style='margin-top:2rem'>Conclusion</div>
+      <p>The findings offered the company a comprehensive overview of the technological landscape in the market, aiding in the identification of current capabilities and future possibilities for developing interactive, data-driven design tools for mass customisation in housing.</p>
+
+    </div>
+    <div class="work-meta">
+      <div class="work-meta-block">
+        <div class="work-meta-label">Period</div>
+        <div class="work-meta-value">2021–2026</div>
+      </div>
+      <div class="work-meta-block">
+        <div class="work-meta-label">Context</div>
+        <div class="work-meta-value">R&amp;D — Mestergruppen / Pilarr</div>
+      </div>
+      <div class="work-meta-block">
+        <div class="work-meta-label">Supervisor</div>
+        <div class="work-meta-value">Lars-Fredrik Forberg</div>
+      </div>
+      <div class="work-meta-block">
+        <div class="work-meta-label">Platforms Tested</div>
+        <div class="work-meta-value">ShapeDiver · Innobrix · Spacio · Paralello · Kitconnect · Rhino.Inside</div>
+      </div>
+      <div class="work-meta-block">
+        <div class="work-meta-label">Live Prototypes</div>
+        <div class="work-meta-value"><a href='../index.html#prototypes' style='color:var(--terracotta)'>View interactive models →</a></div>
+      </div>
+
+    </div>
+  </div>
+
+  <footer class="work-footer">
+    <a href="../index.html" class="home">Return to Home</a>
+    <span class="work-footer-copy">© 2026 Brisa Oliveira e Silva</span>
+    <a href="#" class="top" onclick="window.scrollTo({top:0,behavior:'smooth'});return false;">Back to Top</a>
+  </footer>
+
+  <button class="back-to-top" id="btt" aria-label="Back to top" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
+  <script>
+    window.addEventListener('scroll', () => {
+      document.getElementById('btt').classList.toggle('visible', window.scrollY > 300);
+    }, {passive: true});
+  </script>
+</body>
+</html>

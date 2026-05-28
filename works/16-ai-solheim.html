@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Solheim Image Classification Prototype — Brisa Oliveira e Silva</title>
+  <link rel="stylesheet" href="work.css"/>
+</head>
+<body>
+
+  <nav class="work-nav">
+    <a href="../index.html#works" class="work-nav-back">Selected Works</a>
+    <span class="work-nav-logo">B.O.S.</span>
+    <span class="work-nav-cat">Artificial Intelligence</span>
+  </nav>
+
+  <section class="work-hero">
+    <div class="work-hero-img">
+      <img src="../images/works/16_ai-solheim.svg" alt="Solheim Image Classification Prototype" onerror="this.parentElement.classList.add('placeholder'); this.style.display='none'; this.parentElement.innerHTML+='<span>Add your image here</span>'"/>
+    </div>
+    <div class="work-hero-text">
+      <div class="work-hero-num">16</div>
+      <div class="work-hero-label">Artificial Intelligence · 2021–2026</div>
+      <h1 class="work-hero-title">Solheim Image Classification Prototype</h1>
+      <div class="work-hero-sub">AI Research — Saltdalshytta / Mestergruppen / Pilarr</div>
+      <div class="work-tags"><span>AI / ML</span><span>Python</span><span>TensorFlow</span><span>Keras</span><span>OpenCV</span><span>CNN</span><span>Grasshopper</span></div>
+    </div>
+  </section>
+
+  <div class="work-divider"></div>
+
+  <div class="work-content">
+    <div class="work-text">
+      <div class='work-section-label'>Overview</div>
+      <h2>AI-driven image recognition for architectural design comparison</h2>
+      <p>The Solheim Image Recognition Prototype investigated the potential of artificial intelligence (AI) for identifying and comparing design variations within Saltdalshytta's Solheim cabin series.</p>
+      <div class='work-section-label' style='margin-top:2rem'>Objectives</div>
+      <p>The goal was to create an internal tool that could automatically detect differences between floor plan drawings, illustrating how closely a client's desired layout matched the existing versions in the company's database.</p>
+      <div class='work-section-label' style='margin-top:2rem'>Technical Implementation</div>
+      <p>This project utilised machine learning techniques, specifically Convolutional Neural Networks (CNNs), developed in Python using Keras, TensorFlow, and OpenCV. Two data sources were evaluated:</p>
+      <ul><li>Geometric data exported from Grasshopper</li><li>Image data stored in Google Drive</li></ul>
+      <p>By training the system to interpret and compare architectural drawings, it was able to produce similarity scores and visually highlight discrepancies such as shifted walls, altered window placements, and changes in room dimensions.</p>
+      <div class='work-section-label' style='margin-top:2rem'>Conclusion</div>
+      <p>While the project remained in the prototype phase, it showcased the potential for AI-driven image comparison to serve as a valuable tool for organising and learning from architectural design data — ultimately aiding future teams in working more efficiently and making data-informed design choices.</p>
+
+    </div>
+    <div class="work-meta">
+      <div class="work-meta-block">
+        <div class="work-meta-label">Period</div>
+        <div class="work-meta-value">2021–2026</div>
+      </div>
+      <div class="work-meta-block">
+        <div class="work-meta-label">Context</div>
+        <div class="work-meta-value">AI Research — Saltdalshytta / Mestergruppen / Pilarr</div>
+      </div>
+      <div class="work-meta-block">
+        <div class="work-meta-label">Supervisor</div>
+        <div class="work-meta-value">Lars-Fredrik Forberg</div>
+      </div>
+      <div class="work-meta-block">
+        <div class="work-meta-label">Stack</div>
+        <div class="work-meta-value">Python · Keras · TensorFlow · OpenCV · Grasshopper</div>
+      </div>
+      <div class="work-meta-block">
+        <div class="work-meta-label">Status</div>
+        <div class="work-meta-value">Prototype phase</div>
+      </div>
+
+    </div>
+  </div>
+
+  <footer class="work-footer">
+    <a href="../index.html" class="home">Return to Home</a>
+    <span class="work-footer-copy">© 2026 Brisa Oliveira e Silva</span>
+    <a href="#" class="top" onclick="window.scrollTo({top:0,behavior:'smooth'});return false;">Back to Top</a>
+  </footer>
+
+  <button class="back-to-top" id="btt" aria-label="Back to top" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
+  <script>
+    window.addEventListener('scroll', () => {
+      document.getElementById('btt').classList.toggle('visible', window.scrollY > 300);
+    }, {passive: true});
+  </script>
+</body>
+</html>

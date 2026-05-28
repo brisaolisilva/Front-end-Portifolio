@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Apartment Configurator — Brisa Oliveira e Silva</title>
+  <link rel="stylesheet" href="work.css"/>
+</head>
+<body>
+
+  <nav class="work-nav">
+    <a href="../index.html#works" class="work-nav-back">Selected Works</a>
+    <span class="work-nav-logo">B.O.S.</span>
+    <span class="work-nav-cat">Research / Configurators</span>
+  </nav>
+
+  <section class="work-hero">
+    <div class="work-hero-img">
+      <img src="../images/works/12_apartment.svg" alt="Apartment Configurator" onerror="this.parentElement.classList.add('placeholder'); this.style.display='none'; this.parentElement.innerHTML+='<span>Add your image here</span>'"/>
+    </div>
+    <div class="work-hero-text">
+      <div class="work-hero-num">12</div>
+      <div class="work-hero-label">Research / Configurators · 2021–2026</div>
+      <h1 class="work-hero-title">Apartment Configurator</h1>
+      <div class="work-hero-sub">Research &amp; Development — Mestergruppen AS</div>
+      <div class="work-tags"><span>Parametric</span><span>Excel</span><span>Miroboard</span><span>Rhino.Inside</span><span>ShapeDiver</span><span>BYA</span></div>
+    </div>
+  </section>
+
+  <div class="work-divider"></div>
+
+  <div class="work-content">
+    <div class="work-text">
+      <div class='work-section-label'>Overview</div>
+      <h2>Optimising Apartment Mixes with Digital Tools</h2>
+      <p>In my exploration of the Apartment Configurator, I investigated how digital tools can help developers optimise apartment mixes by considering market demand, spatial efficiency, optional garage inclusion, and regulatory constraints like BYA (built-up area).</p>
+      <p>The aim was to design an intuitive system where entrepreneurs or end clients could input basic building parameters — such as footprint length — and interactively examine various apartment configurations that adapt to different site and market conditions.</p>
+      <div class='work-section-label' style='margin-top:2rem'>Research &amp; Evaluation</div>
+      <p>Over the course of a year, I experimented with several parametric and collaborative platforms, including Innobrix, Spacio, PlacePoint, Rhino.Inside, ShapeDiver, Parallelo.io, KitConnect, Miroboard, and advanced Excel prototypes. Each platform was assessed based on its capacity to handle constraints, offer design flexibility, and facilitate user interaction.</p>
+      <div class='work-section-label' style='margin-top:2rem'>Key Challenge</div>
+      <p>A significant challenge was aligning layout logic with structural and mechanical constraints, particularly regarding the positioning of vertical shafts and service cores when mixing apartment sizes. Given these complexities, creating a fully automated configurator that maintained architectural accuracy proved to be unfeasible.</p>
+      <div class='work-section-label' style='margin-top:2rem'>Final Outcome</div>
+      <p>The final result integrated a brainstorming interface in Miroboard with an advanced Excel-based configurator capable of generating mix scenarios based on specified input types. This project provided valuable insights into the potentials and limitations of automated apartment design tools, emphasising the synergy between client input and parametric systems to inform smarter early-stage design decisions.</p>
+
+    </div>
+    <div class="work-meta">
+      <div class="work-meta-block">
+        <div class="work-meta-label">Period</div>
+        <div class="work-meta-value">2021–2026</div>
+      </div>
+      <div class="work-meta-block">
+        <div class="work-meta-label">Context</div>
+        <div class="work-meta-value">R&amp;D — Mestergruppen / Industriell Verdikjede</div>
+      </div>
+      <div class="work-meta-block">
+        <div class="work-meta-label">Supervisor</div>
+        <div class="work-meta-value">Lars-Fredrik Forberg</div>
+      </div>
+      <div class="work-meta-block">
+        <div class="work-meta-label">Platforms</div>
+        <div class="work-meta-value">Innobrix · Spacio · ShapeDiver · Rhino.Inside · Miroboard · Excel</div>
+      </div>
+      <div class="work-meta-block">
+        <div class="work-meta-label">Output</div>
+        <div class="work-meta-value">Miroboard + Excel configurator workflow</div>
+      </div>
+
+    </div>
+  </div>
+
+  <footer class="work-footer">
+    <a href="../index.html" class="home">Return to Home</a>
+    <span class="work-footer-copy">© 2026 Brisa Oliveira e Silva</span>
+    <a href="#" class="top" onclick="window.scrollTo({top:0,behavior:'smooth'});return false;">Back to Top</a>
+  </footer>
+
+  <button class="back-to-top" id="btt" aria-label="Back to top" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
+  <script>
+    window.addEventListener('scroll', () => {
+      document.getElementById('btt').classList.toggle('visible', window.scrollY > 300);
+    }, {passive: true});
+  </script>
+</body>
+</html>

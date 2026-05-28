@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>PyRevit Custom Tools — Brisa Oliveira e Silva</title>
+  <link rel="stylesheet" href="work.css"/>
+</head>
+<body>
+
+  <nav class="work-nav">
+    <a href="../index.html#works" class="work-nav-back">Selected Works</a>
+    <span class="work-nav-logo">B.O.S.</span>
+    <span class="work-nav-cat">Automation / Digital Tools</span>
+  </nav>
+
+  <section class="work-hero">
+    <div class="work-hero-img">
+      <img src="../images/works/17_pyrevit.svg" alt="PyRevit Custom Tools" onerror="this.parentElement.classList.add('placeholder'); this.style.display='none'; this.parentElement.innerHTML+='<span>Add your image here</span>'"/>
+    </div>
+    <div class="work-hero-text">
+      <div class="work-hero-num">17</div>
+      <div class="work-hero-label">Automation / Digital Tools · 2021–2026</div>
+      <h1 class="work-hero-title">PyRevit Custom Tools</h1>
+      <div class="work-hero-sub">Research &amp; Development — Mestergruppen / Pilarr</div>
+      <div class="work-tags"><span>Python</span><span>PyRevit</span><span>Revit API</span><span>Automation</span><span>Quality Control</span></div>
+    </div>
+  </section>
+
+  <div class="work-divider"></div>
+
+  <div class="work-content">
+    <div class="work-text">
+      <div class='work-section-label'>Overview</div>
+      <h2>Enhancing Architectural Quality Control with Custom PyRevit Tools</h2>
+      <p>As part of my ongoing efforts in automation and digital workflows, I created a series of tailored PyRevit tools aimed at improving architectural quality control and model visualisation within Autodesk Revit. These tools utilise the Revit API for real-time analysis and streamline repetitive design validation tasks.</p>
+      <div class='work-section-label' style='margin-top:2rem'>Isolate.Wall.Min.Height</div>
+      <p>This script isolates all walls in a Revit model that exceed a user-defined height threshold. Upon execution, the tool prompts the user to input a preferred wall height (e.g. 2400 mm), then examines the model, identifies walls that meet or exceed this threshold, and automatically isolates them in the current view.</p>
+      <p>This allows architects to quickly visualise and analyse elements that diverge from standard height constraints, enhancing quality control and facilitating efficient design reviews.</p>
+      <div class='work-section-label' style='margin-top:2rem'>Gesimshøyde &amp; Mønehøyde Dimension Checker</div>
+      <p>This tool verifies and compares essential architectural dimensions — Gesimshøyde (eaves height) and Mønehøyde (ridge height) — across various views within a Revit model. Users specify maximum allowable heights, and the script scans all dimension elements for corresponding labels.</p>
+      <p>If any dimension surpasses the defined limits or reveals inconsistencies between views, the tool triggers a red warning flag — aiding regulatory compliance and ensuring accurate communication of vital height information.</p>
+      <div class='work-section-label' style='margin-top:2rem'>Impact</div>
+      <p>Both tools significantly enhance model consistency, speed, and accuracy. They were developed to promote data-driven design validation within architectural workflows, empowering architects to make informed decisions directly in Revit.</p>
+
+    </div>
+    <div class="work-meta">
+      <div class="work-meta-block">
+        <div class="work-meta-label">Period</div>
+        <div class="work-meta-value">2021–2026</div>
+      </div>
+      <div class="work-meta-block">
+        <div class="work-meta-label">Context</div>
+        <div class="work-meta-value">R&amp;D Project — Mestergruppen / Pilarr</div>
+      </div>
+      <div class="work-meta-block">
+        <div class="work-meta-label">Supervisor</div>
+        <div class="work-meta-value">Lars-Fredrik Forberg</div>
+      </div>
+      <div class="work-meta-block">
+        <div class="work-meta-label">Stack</div>
+        <div class="work-meta-value">Python · PyRevit · Revit API</div>
+      </div>
+      <div class="work-meta-block">
+        <div class="work-meta-label">Output</div>
+        <div class="work-meta-value">2 production tools deployed internally</div>
+      </div>
+
+    </div>
+  </div>
+
+  <footer class="work-footer">
+    <a href="../index.html" class="home">Return to Home</a>
+    <span class="work-footer-copy">© 2026 Brisa Oliveira e Silva</span>
+    <a href="#" class="top" onclick="window.scrollTo({top:0,behavior:'smooth'});return false;">Back to Top</a>
+  </footer>
+
+  <button class="back-to-top" id="btt" aria-label="Back to top" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
+  <script>
+    window.addEventListener('scroll', () => {
+      document.getElementById('btt').classList.toggle('visible', window.scrollY > 300);
+    }, {passive: true});
+  </script>
+</body>
+</html>
