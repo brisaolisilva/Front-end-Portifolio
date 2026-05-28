@@ -316,7 +316,7 @@
         <div class="proto-info">
           <div class="proto-number-sm">01</div>
           <h3>House Configurator Test</h3>
-          <p>Early prototype exploring real-time parametric house configuration in the browser via ShapeDiver and Grasshopper. Tests user interaction, parameter sliders, and geometry update speed.</p>
+          <p>Early prototype exploring real-time parametric apartment configuration in the browser via ShapeDiver and Grasshopper. Parameter sliders, test constraints, and geometry update response.</p>
           <div class="proto-tags"><span>ShapeDiver</span><span>Grasshopper</span><span>Configurator</span></div>
           <span class="proto-launch">Open in ShapeDiver ↗</span>
         </div>
@@ -332,7 +332,7 @@
         <div class="proto-info">
           <div class="proto-number-sm">02</div>
           <h3>Nordnes Saltak — Roof Variants A/B/C</h3>
-          <p>Parametric cabin roof study with multiple configurable variants. Explores how structural grid decisions and roof typology affect spatial layout and regulatory compliance in prefab cabin typologies.</p>
+          <p>Parametric cabin roof model with configurable variants. Explores facade typology, isolate variant types, and assign PV panels.</p>
           <div class="proto-tags"><span>ShapeDiver</span><span>Cabin Design</span><span>Prefab</span><span>Grasshopper</span></div>
           <span class="proto-launch">Open in ShapeDiver ↗</span>
         </div>
@@ -348,7 +348,7 @@
         <div class="proto-info">
           <div class="proto-number-sm">03</div>
           <h3>Solheim 110 — Unit Configurator</h3>
-          <p>Web-based configurator for the Solheim cabin series (110m²). Allows interactive exploration of layout options — part of the research into AI-based image comparison for design variation across a product family.</p>
+          <p>Web-based configurator prototype for the Solheim cabin series (110m²). Allows interactive exploration of layout options.</p>
           <div class="proto-tags"><span>ShapeDiver</span><span>Cabin</span><span>Saltdalshytta</span><span>Layout</span></div>
           <span class="proto-launch">Open in ShapeDiver ↗</span>
         </div>
@@ -550,6 +550,11 @@
   <script src="js/main.js"></script>
 
   <!-- Back to Top -->
-  <button id="btt" class="back-to-top" aria-label="Back to top" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
+ <button class="back-to-top" id="btt" aria-label="Back to top" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
+  <script>
+    window.addEventListener('scroll', () => {
+      document.getElementById('btt').classList.toggle('visible', window.scrollY > 300);
+    }, {passive: true});
+  </script>
 </body>
 </html>
